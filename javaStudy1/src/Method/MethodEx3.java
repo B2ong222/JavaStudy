@@ -10,22 +10,23 @@ public class MethodEx3 {
         balance = Ibgm(balance, depositAmount);
 
         int withdrawAmount = 2000;
-        chulgm(balance, withdrawAmount);
+        balance = chulgm(balance, withdrawAmount);
 
 
         System.out.println("최종 잔액: " + balance + "원");
     }
-    public static void Ibgm(int balance, int depositAmount){
+    public static int Ibgm(int balance, int depositAmount){
         balance += depositAmount;
         System.out.println(depositAmount + "원을 입금하였습니다. 현재 잔액: " + balance + "원");
         return balance;
     }
-    public static void chulgm(int balance, int withdrawAmount){
+    public static int chulgm(int balance, int withdrawAmount){
         if (balance >= withdrawAmount) {
             balance -= withdrawAmount;
             System.out.println(withdrawAmount + "원을 출금하였습니다. 현재 잔액: " + balance + "원");
         } else {
             System.out.println(withdrawAmount + "원을 출금하려 했으나 잔액이 부족합니다.");
         }
+        return balance;
     }
 }
