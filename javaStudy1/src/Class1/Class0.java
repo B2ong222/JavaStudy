@@ -1,4 +1,4 @@
-package Class;
+package Class1;
 
 public class Class0 {
     static void main() {

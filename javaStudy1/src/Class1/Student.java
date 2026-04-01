@@ -1,0 +1,19 @@
+package Class1;
+
+public class Student {
+    String name;
+    int studentId;
+    int grade;
+
+    // 생성자
+    public Student(String name, int studentId, int grade) {
+        this.name = name;
+        this.studentId = studentId;
+        this.grade = grade;
+    }
+
+    // 메서드
+    public void introduce() {
+        System.out.println("저는 " + grade + "학년 " + studentId + " " + name + "입니다.");
+    }
+}
