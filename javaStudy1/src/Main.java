@@ -1,8 +1,8 @@
-import Class1.Student;
+import Class1.Book;
 
 public class Main {
     public static void main(String[] args) {
-        Student s = new Student("카리나", 2101, 2);
-        s.introduce();
+        Book b = new Book("흰", "한강", 15000);
+        System.out.println("도서명: " +  b.title + ", 작가: " +b.author + ", 가격: "+ b.price +"원");
     }
 }
