@@ -1,0 +1,19 @@
+package memory;
+
+public class JavaMemoryMain1 {
+    static void main() {
+        System.out.println("main start");
+        method1(10);
+        System.out.println("main end");
+    }
+    static void method1(int m1) {
+        System.out.println("m1 start");
+        int cal = m1 * 2;
+        method2(cal);
+        System.out.println("m1 end");
+    }
+    static void method2(int m2){
+        System.out.println("m2 start");
+        System.out.println("m2 end");
+    }
+}
